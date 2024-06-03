@@ -54,11 +54,32 @@
 
 # WEB DEVELOPMENT ROLES
   ## [BACKEND DEVELOPMENT ROLES]()
+Your primary role as a Backend Developer involves writing code related to:
+
+  * Business rules
+  * Validation
+  * User authorization
+  * Database connections
+  * Code that runs on the server side
+  * A Backend Developer may also be involved in other roles such as:
+
+**DB ADMIN**
+
+  * Manages a database, its policies, and how we will access that database through the code, as well as the security measures that should be in place.
+
+**SERVER ADMIN**
+
+  * Responsible for managing the security of the servers where the code is deployed.
 
   <br>
   <br>
 
   ## [FRONTEND, BACKEND AND FULL STACK]()
+Clients
+  * Browsers
+  * Mobile devices
+  * IOT
+ 
 
 <br>
 <br>
