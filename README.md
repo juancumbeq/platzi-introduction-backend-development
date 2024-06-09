@@ -186,14 +186,67 @@ Spring: es un framework de Java que se enfoca en la creación de aplicaciones em
 Estos son solo algunos ejemplos de frameworks para backend, hay muchos más disponibles dependiendo de la plataforma y del lenguaje de programación que elijas. Es importante evaluar cuál es el mejor para tu proyecto en particular, teniendo en cuenta tus necesidades y preferencias personales.
 
 <p align="center">
-  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/languages-frameworks.png?raw=true" width= "75%" alt="Frameworks">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/languages-frameworks.png?raw=true" width= "65%" alt="Frameworks">
 </p>
 
 <br>
 <br>
 
-  ## [HTTP]()
+  ## [HTTP]()
+  ### URL structure
+Cuando queremos acceder a un recurso de internet lo hacemos a través de una URL. La URL se compone de diversas partes, como son: protocolo, dominio y end-point.
 
+Protocolo: tenemos http y https, la "s" indica que toda la comunicación hacia el dominio indicado está cifrada, por lo que representa un protocolo más seguro.
+
+Dominio: hace referencia a la página web a la que solicitamos el recurso, mediante el protoco DNS ese dominio se traduce a una dirección IP que hará referencia a un servidor específico, en el que se encuentra alojada la web a la que queremos acceder, así como todos los recursos extra.
+
+End-point: mediante esta elemento podemos acceder a un recurso o servicio en concreto. El servidor se encargará de procesar la petición en referencia a un end-point en particular, recogiendo todos los recursos requeridos y retornándolos al cliente.
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/url.png?raw=true" width= "100%" alt="Url structure">
+</p>
+
+  ### Request-Response structure
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/request-response-structure.png?raw=true" width= "100%" alt="request-response-structure">
+</p>
+
+Las respuestas por parte del servidor pueden venir en varios formatos. Cómo podemos ver pueden ser archivos para renderizado (HTML, CSS y JS) o archivos de datos (XML, JSON)
+
+  ### Http codes
+El rango de 1xx indica información hacia los clientes.
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/1xx-codes.png?raw=true" width= "65%" alt="1xx-codes">
+</p>
+
+El rango de 2xx es el rango más usado, e indica éxito en la petición.
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/2xx-codes.png?raw=true" width= "65%" alt="2xx-codes">
+</p>
+
+El rango de 3xx es el rango usado para indicar a los clientes que se han movido recursos. De esta manera podemo redireccionar al usuario a otra página web.
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/3xx-codes.png?raw=true" width= "65%" alt="3xx-codes">
+</p>
+
+El rango de 4xx indica errores por parte del cliente. El error más común es el 404, donde el cliente solicita una página web que no existe.
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/4xx-codes.png?raw=true" width= "65%" alt="4xx-codes">
+</p>
+
+El rango de 5xx indica errores por parte del sevidor. Por ejemplo, el error 504 indica que se consumido el tiempo para retornar el recurso solicitado al cliente.
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/5xx-codes.png?raw=true" width= "65%" alt="5xx-codes">
+</p>
+
+Resumen de los http codes:
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/status-code.png?raw=true" width= "65%" alt="status-code">
+</p>
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/http-status-code.png?raw=true" width= "65%" alt="http-status-code">
+</p>
 
 
 <br>
@@ -202,11 +255,50 @@ Estos son solo algunos ejemplos de frameworks para backend, hay muchos más disp
 
 # REST APIS
   ## [WHAT ARE THE APIS?]()
+Las APIs son interfaces que nos permiten, a través de código, la comunicación entre sistemas. Como backend developers, nos interesan las APIs que son servicio web y corren en el protocolo HTTP. La API utiliza una lista de rutas conocidas como endpoints, que provee las respuestas a las solicitudes del cliente. La solicitud debe ser empaquetada y retornada, y existen distintos tipos de empaquetado: JSON. XML.
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/how-api-works.png?raw=true" width= "65%" alt="how-api-works">
+</p>
+
+Un vistazo a lo que es un Rest API:
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/api-def.png?raw=true" width= "65%" alt="api-def">
+</p>
 
 <br>
 <br>
 
   ## [REST API STRUCTURE]()
+
+REST (Representational State Transfer) API es un estilo de arquitectura de software que se utiliza para construir servicios web. Una API REST es una interface que se utiliza para interconectar sistemas o aplicaciones, y permite que estos sistemas o aplicaciones envíen y reciban datos entre sí a través de la red.
+
+Una API REST se basa en el protocolo HTTP, y utiliza operaciones HTTP como GET, POST, PUT y DELETE para realizar diversas acciones sobre los datos almacenados en un servidor. Estas operaciones son conocidas como métodos HTTP, y corresponden a las acciones CRUD (Create, Read, Update, Delete) que se pueden realizar sobre los datos.
+
+Por ejemplo, si tienes una aplicación web que almacena información de contactos, podrías utilizar una API REST para permitir que otras aplicaciones accedan y utilicen los datos de tus contactos. La aplicación podría exponer una API REST que permita a otras aplicaciones realizar operaciones como crear un nuevo contacto, obtener la lista de todos los contactos, modificar la información de un contacto existente o eliminar un contacto.
+
+Una API REST se utiliza a menudo para construir servicios web que pueden ser utilizados por diversas aplicaciones o sistemas, y es una forma común de permitir la integración entre diferentes sistemas y plataformas.
+
+
+
+API REST es un estandar para desarrollar APIs que funcionan en el protocolo HTTP .
+A través de los endpoints se le pide información al dominio, por lo general, se nos devuelve la información empaquetada en un JSON.
+CRUD es el índice de unas plabras clave, y en el protocolo HTTP tenemos métodos para llevarlas a cabo:
+Create (crear) → POST.
+Read (leer) → GET.
+Update (actualizar) → PUT / PATCH.
+Delete (eliminar) → DELETE.
+Put envía la totalidad de los datos, mientras que patch envía solo los datos destinados a actualizarse.
+
+
+
+La diferencia entre PUT y PATCH es:
+
+PUT == enviará todos los datos
+PATCH == enviará los datos que se están actualizando
+
+
+
 
 <br>
 <br>
