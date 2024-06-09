@@ -133,7 +133,7 @@ Este rol en la combinación entre un frontend y un backend developer.
 <br>
 
   ## [HOW TO CHOSE THE LANGUAGES AND FRAMEWORKS FOR THE BACKEND?]()
- Lo principal es escoger un lenguaje en el cual especializarte, acorde a sus características y tus preferencias, luego de aprender el lenguaje, puedes profundizar aun mas en uno o varios de sus framework.
+Lo principal es escoger un lenguaje en el cual especializarte, acorde a sus características y tus preferencias, luego de aprender el lenguaje, puedes profundizar aun mas en uno o varios de sus framework.
 
 Cada framework (en su mayoría) se utiliza para montar servidores web, los cuales disponen de varios funcionalidades, las cuales se ejecutan sobre el protocolo HTTP.
 
@@ -185,10 +185,16 @@ Spring: es un framework de Java que se enfoca en la creación de aplicaciones em
 
 Estos son solo algunos ejemplos de frameworks para backend, hay muchos más disponibles dependiendo de la plataforma y del lenguaje de programación que elijas. Es importante evaluar cuál es el mejor para tu proyecto en particular, teniendo en cuenta tus necesidades y preferencias personales.
 
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/languages-frameworks.png?raw=true" width= "75%" alt="Frameworks">
+</p>
+
 <br>
 <br>
 
   ## [HTTP]()
+
+
 
 <br>
 <br>
