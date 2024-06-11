@@ -74,7 +74,7 @@ Your primary role as a Backend Developer involves writing code related to:
   <br>
   <br>
 
-  ## [FRONTEND, BACKEND AND FULL STACK]()
+  ## [FRONTEND, BACKEND AND FULL STACK]()
 En este apartado hacemos una diferenciación entre las areas de backend y frontend. Ya que cómo desarrolladores backend vamos a desarrollar servicios, los cuales los clientes se conectarán, entre los distintos clientes encontramos:
 
   * Browsers
@@ -258,7 +258,7 @@ Resumen de los http codes:
 Las APIs son interfaces que nos permiten, a través de código, la comunicación entre sistemas. Como backend developers, nos interesan las APIs que son servicio web y corren en el protocolo HTTP. La API utiliza una lista de rutas conocidas como endpoints, que provee las respuestas a las solicitudes del cliente. La solicitud debe ser empaquetada y retornada, y existen distintos tipos de empaquetado: JSON. XML.
 
 <p align="center">
-  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/how-api-works.png?raw=true" width= "65%" alt="how-api-works">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/how-api-work.png?raw=true" width= "65%" alt="how-api-work">
 </p>
 
 Un vistazo a lo que es un Rest API:
@@ -270,7 +270,6 @@ Un vistazo a lo que es un Rest API:
 <br>
 
   ## [REST API STRUCTURE]()
-
 REST (Representational State Transfer) API es un estilo de arquitectura de software que se utiliza para construir servicios web. Una API REST es una interface que se utiliza para interconectar sistemas o aplicaciones, y permite que estos sistemas o aplicaciones envíen y reciban datos entre sí a través de la red.
 
 Una API REST se basa en el protocolo HTTP, y utiliza operaciones HTTP como GET, POST, PUT y DELETE para realizar diversas acciones sobre los datos almacenados en un servidor. Estas operaciones son conocidas como métodos HTTP, y corresponden a las acciones CRUD (Create, Read, Update, Delete) que se pueden realizar sobre los datos.
@@ -279,32 +278,36 @@ Por ejemplo, si tienes una aplicación web que almacena información de contacto
 
 Una API REST se utiliza a menudo para construir servicios web que pueden ser utilizados por diversas aplicaciones o sistemas, y es una forma común de permitir la integración entre diferentes sistemas y plataformas.
 
-
-
-API REST es un estandar para desarrollar APIs que funcionan en el protocolo HTTP .
 A través de los endpoints se le pide información al dominio, por lo general, se nos devuelve la información empaquetada en un JSON.
+
+  ### CRUD
 CRUD es el índice de unas plabras clave, y en el protocolo HTTP tenemos métodos para llevarlas a cabo:
-Create (crear) → POST.
-Read (leer) → GET.
-Update (actualizar) → PUT / PATCH.
-Delete (eliminar) → DELETE.
-Put envía la totalidad de los datos, mientras que patch envía solo los datos destinados a actualizarse.
+  * Create (crear) → POST.
+  * Read (leer) → GET.
+  * Update (actualizar) → PUT / PATCH. Put envía la totalidad de los datos, mientras que patch envía solo los datos destinados a actualizarse.
+  * Delete (eliminar) → DELETE.
 
 
-
-La diferencia entre PUT y PATCH es:
-
-PUT == enviará todos los datos
-PATCH == enviará los datos que se están actualizando
-
-
-
+  ### Ejemplo de CRUD 
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/end-points.png?raw=true" width= "65%" alt="end-points">
+</p>
 
 <br>
 <br>
 
   ## [INSOMNIA AND POSTMAN]()
+Postman e [Insomnia](https://insomnia.rest/) son dos aplicaciones que nos permiten consumir los recursos de una API, indicando las variables necesarias.
 
+Para probar el funcionamiento necesitamos un API, para ello, Platzi nos permite usar la suya: [Platzi API](https://fakeapi.platzi.com/). Es necesario revisar la documentación para entender cómo se han de configurar las peticiones. 
+
+  * Las peticiones GET (lectura) no tienen información para enviar en el body.
+  * Insomnia te permite modificar el nombre de las peticiones para identificarlas.
+  * Si envías un identificador inexistente en la base de datos, recibirás un código de estado 404 NOT FOUND.
+  * Para enviar una petición con el método POST, debes adjuntar la información en el body. Insomnia te permite modificar todos estos parámetros.
+  * El identificador único lo asigna automátocamente la fakeAPI de Platzi.
+  * Una tarea importante del backend es asegurar y validad la integridad de la información. Si no envías toda la información necesaria de una categoría, recibirás un código de estado 400 BAD REQUEST.
+  * Una vez modifiques una categoría en la API conn PUT o PATCH, puedes consultarla con normalidad a través del método GET.
 <br>
 <br>
 <br>
@@ -312,11 +315,19 @@ PATCH == enviará los datos que se están actualizando
 # BACKEND ON A DAILY BASIS
   ## [THE CLOUD]()
 
+La nube es donde se alojan los servicios (código) para exponerlos, y que los clientes puedan hacer request (peticiones). Ofrecen servicios para distribuir y desplegar aplicaciones.
+La nube no está en el cielo, no es literalmente una nube, es la computadora de alguien más (tu proveedor). Tinen un CPU, una RAM y un SSD, como cualquier otra computadora.
+Los proveedores poseen granjas de servidores configurados (data centers) ubicadas en diferentes lugares del mundo.
+Mientras más cerca estés al data center que te conectes, experimentarás menor latencia, por lo que los recurso llegarán con mayor rapidez.
+Como parte de esa "nube", según la que escojas, puedes tener tu sistema replicado en diferentes lugares, y elegir en dónde estarán tus sistemas corriendo, y optimizarlos para desplegar tu aplicación.
+
+  ### Datacenter
+
 <br>
 <br>
 
   ## [DEVOPS]()
-   dfshdhasdassdasfsadf
+
 <br>
 <br>
 
