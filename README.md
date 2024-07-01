@@ -484,24 +484,71 @@ Ofrecen servicios para administrar las bases de datos en diferentes bases de dat
 
 # BACKEND SCALABILITY
   ## [WHAT IS SCALABILITY?]()
+En el momento en el que nuestro servidor donde tenemos alojada nuestra aplicación comienza a recibir demasiadas peticiones tiene a colapsar. En este momento sólo tenemos dos opciones: escalar verticalmente u escalar horizontalmente.
 
-  <br>
-  <br>
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/vertical-vs-horizontal.png?raw=true" width= "65%" alt="vertical-vs-horizontal">
+</p>
+
+  ### Escalamiento vertical
+Una forma de solucionar el problema es incrementar las prestaciones del servidor, es decir, aumentar la:
+  - CPU
+  - RAM
+  - Disk
+
+  #### Problemas
+Esta solución de escalabilidad tiene tres problemas clave:
+
+  - Costo: a medida que incrementamos las prestaciones del servidor, los costes de mantenimiento del mismo se elevan exponencialmente.
+
+  - Difícil hacer downgrade: algunos proveedores una vez hemos ampliado las características de nuestro servidor no nos permite desescalar, es decir volver a la configuración anterior.
+
+  - Disponibilidad: en el caso de que algo falle en el servidor, todo deja de funcionar, la solución a esto es el escalamiento horizontal.
+
+  ### Escalamiento horizontal
+En lugar de ampliar las características de un servidor lo que hacemos es replicar el que ya tenemos, es decir pasamos a tener 3 instancias del mismo servidor original.
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/es-horizontal.png?raw=true" width= "65%" alt="es-horizontal">
+</p>
+
+Esta técnica resulta mucho menos costosa y permite hacer downgrade ya que si no necesitamos tantos servidores simplemente los deconectamos.
+
+La gran ventaja del escalamiento horizontal radica en la disponibilidad, es decir, si alguno de los servidores falla, los restantes pueden asumir la carga de trabajo.
+
+  ### Load Balancer
+Es el intermediario que tiene conocimiento de nuestras instancias/servidores (al conjunto de servidores se denomina Clouster). Si un nodo(instancia) se cae o está saturado, el load balancer se encarga de desviar las peticiones hacia los nodos restantes.
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/load-balancer.png?raw=true" width= "65%" alt="load-balancer">
+</p>
+
+  ### Problemas
+Si tenemos la base de datos local en cada servidor los datos no se van a sincronizar, de modo que vamos a tener varias instancias distintas de la base de datos.
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/database-server.png?raw=true" width= "65%" alt="database-server">
+</p>
+
+La solución radica en gestionar la base de datos fuera de estos servidores. Quizas como un servidor aparte que sirva como DB. Otra alternativa es la replicación.
+
+<br>
+<br>
 
   ## [WHAT IS REPLICATION?]()
 
-  <br>
-  <br>
+<br>
+<br>
 
   ## [WHAT IS THE CACHE?]()
 
-  <br>
-  <br>
+<br>
+<br>
 
   ## [TASK QUEUE]()
 
-  <br>
-  <br>
+<br>
+<br>
 
   ## [SERVER-SIDE RENDERING]()
 
