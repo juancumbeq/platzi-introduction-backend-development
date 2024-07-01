@@ -402,12 +402,81 @@ SaaS: Netflix. PaaS: Windows Azure. IaaS: Amazon Web Services.
 <br>
 
   ## [COOKIES AND SESSIONS]()
+Las cookies son pequeños fragmentos de texto que los sitios web que visitas envían al navegador
 
+Permiten que los sitios web recuerden información sobre tu visita, lo que puede hacer que sea más fácil volver a visitar los sitios y hacer que estos te resulten más útiles. En las Cookies podemos almacenar datos como:
+  - De qué país te conectas
+  - Preferencias como del idioma
+  - Almacenar una sesión de login
+
+  ### ¿Cómo funciona?
+  - Desde el Cliente realizamos una solicitud al Servidor
+  - Desde el servidor reconocemos el usuario y generamos una Cookie.
+  - Esta Cookie se envía al navegador para que sea guardada.
+  - Así se identifica un usuario.
+  - Una vez almacenada, al momento que el cliente haga una petición al servidor, éste va a reconocer la cookie creada.
+  - El Servidor podrá retornar una respuesta más apropiada a este cliente en especifico.
+
+  ### Problema de las Cookies
+Las cookies solamente funcionan entre navegador y servidor, si queremos utilizarlas en mobile apps, no serán compatibles.
+
+Pero hay una alternativa que se llama JWT que funciona en mobile y en navegadores. .
+
+  ### Json Web Tokens o JWT
+Es un estándar abierto basado en JSON para la creación de tokens de acceso que permiten la propagación de identidad y privilegios. Por ejemplo, un servidor podría generar un token indicando que el usuario tiene privilegios de administrador y proporcionarlo a un cliente. El cliente entonces podría utilizar el token para probar que está actuando como un administrador en el cliente o en otro sistema.  El token está firmado por la clave del servidor, así que el cliente y el servidor son ambos capaces de verificar que el token es legítimo.
+
+JWT (Json Web Tokens) es una tecnología que nos permite validar por medio de tokens las mismas características que las cookies pero en dispositivos móviles. Funciona tanto en dispositivos móviles como navegadores.
 
 <br>
 <br>
 
   ## [DATABASES]()
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/server.png?raw=true" width= "65%" alt="server">
+</p>
+Una base de datos es una herramienta para recopilar y organizar información. Las bases de datos  pueden almacenar información sobre personas, productos, pedidos u otras cosas. Existen dos tipos de bases de datos: Relacionales y No Relacionales.
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/bbdd.png?raw=true" width= "65%" alt="bbdd">
+</p>
+
+  ### Relacionales (SQL)
+Se caracterizan por ser creadas con tablas que relaciona los datos con otros. usa SQL (Structured Query Language) que es un lenguaje de computación para trabajar con conjuntos de datos y las relaciones entre ellos. . Las BD relacionales más populares son:
+
+  - MySQL
+  - PostgreSQL
+  - ORACLE
+  - Microsoft SQL Server
+
+Al trabajar todos con SQL, los frameworks aprovechan para trabajar con ORMS Object-Relational Mapping, que es una forma de abstraer la conexión a estas bases de datos, utilizando la POO (Programación Orientada a Objetos).
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/sql-orm.png?raw=true" width= "65%" alt="sql-orm">
+</p>
+
+  ### No Relacionales (No SQL)
+Una base de datos no relacional es aquella que no usa el esquema tabular de filas y columnas que se encuentra en la mayoría de los sistemas de base de datos más tradicionales. en vez de SQL, usa un formato JSON o parecido. Las BD no relacionales más populares son:
+
+  - MongoDB
+  - Cassandra (Apache)
+  - Couchbase
+
+  ### Drivers
+Por medio de los drivers el backend se comunica con las bases de datos.
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/drivers.png?raw=true" width= "65%" alt="drivers">
+</p>
+
+También es importante tener en cuenta que el desarrollador backend no es quien administra el mantenimiento de las bases de datos, no gestiona backups, sincronización, etc, ésto lo hace el DB Admin. Sino que éste construye la lógica para consumir éste servicio por medio de los drivers.
+
+  ### Proveedores de DB Administration
+Ofrecen servicios para administrar las bases de datos en diferentes bases de datos y éstos cobran de acuerdo al servicio y puede salir más economico que crear un equipo para administrar toda nuestras bases de datos. Algunos son:
+  - Heroku.
+  - Firebase
+  - Digital Ocean
+  - Mongo Atlas
+  - Couchbase Capella DBaaS
 
 <br>
 <br>
