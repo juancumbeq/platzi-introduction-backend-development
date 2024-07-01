@@ -296,10 +296,10 @@ CRUD es el índice de unas plabras clave, y en el protocolo HTTP tenemos método
 <br>
 <br>
 
-  ## [INSOMNIA AND POSTMAN]()
-Postman e [Insomnia](https://insomnia.rest/) son dos aplicaciones que nos permiten consumir los recursos de una API, indicando las variables necesarias.
+  ##  [INSOMNIA AND POSTMAN]()
+  Postman e [Insomnia](https://insomnia.rest/) son dos aplicaciones que nos permiten consumir los recursos de una API, indicando las variables necesarias.
 
-Para probar el funcionamiento necesitamos un API, para ello, Platzi nos permite usar la suya: [Platzi API](https://fakeapi.platzi.com/). Es necesario revisar la documentación para entender cómo se han de configurar las peticiones. 
+  Para probar el funcionamiento necesitamos un API, para ello, Platzi nos permite usar la suya: [Platzi API](https://fakeapi.platzi.com/). Es necesario revisar la documentación para entender cómo se han de configurar las peticiones. 
 
   * Las peticiones GET (lectura) no tienen información para enviar en el body.
   * Insomnia te permite modificar el nombre de las peticiones para identificarlas.
@@ -308,38 +308,104 @@ Para probar el funcionamiento necesitamos un API, para ello, Platzi nos permite 
   * El identificador único lo asigna automátocamente la fakeAPI de Platzi.
   * Una tarea importante del backend es asegurar y validad la integridad de la información. Si no envías toda la información necesaria de una categoría, recibirás un código de estado 400 BAD REQUEST.
   * Una vez modifiques una categoría en la API conn PUT o PATCH, puedes consultarla con normalidad a través del método GET.
+
 <br>
 <br>
 <br>
 
 # BACKEND ON A DAILY BASIS
   ## [THE CLOUD]()
+  * La nube es donde se alojan los servicios (código) para exponerlos, y que los clientes puedan hacer request (peticiones). Ofrecen servicios para distribuir y desplegar aplicaciones.
+  * La nube es el ordenador de alguien más (tu proveedor). Tinen un CPU, una RAM y un SSD, como cualquier otro ordenador.
+  * Los proveedores poseen granjas de servidores configurados (data centers) ubicadas en diferentes lugares del mundo.
+  * Mientras más cerca estés al data center que te conectes, experimentarás menor latencia, por lo que los recurso llegarán con mayor rapidez.
+  * Como parte de esa "nube", según la que escojas, puedes tener tu sistema replicado en diferentes lugares, y elegir en dónde estarán tus sistemas corriendo, y optimizarlos para desplegar tu aplicación.
 
-La nube es donde se alojan los servicios (código) para exponerlos, y que los clientes puedan hacer request (peticiones). Ofrecen servicios para distribuir y desplegar aplicaciones.
-La nube no está en el cielo, no es literalmente una nube, es la computadora de alguien más (tu proveedor). Tinen un CPU, una RAM y un SSD, como cualquier otra computadora.
-Los proveedores poseen granjas de servidores configurados (data centers) ubicadas en diferentes lugares del mundo.
-Mientras más cerca estés al data center que te conectes, experimentarás menor latencia, por lo que los recurso llegarán con mayor rapidez.
-Como parte de esa "nube", según la que escojas, puedes tener tu sistema replicado en diferentes lugares, y elegir en dónde estarán tus sistemas corriendo, y optimizarlos para desplegar tu aplicación.
-
-  ### Datacenter
+  Proveedores más conocidos:
+  <p align="center">
+    <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/cloud-providers.png?raw=true" width= "65%" alt="cloud-providers">
+  </p>
 
 <br>
 <br>
 
   ## [DEVOPS]()
+  DevOps es un enfoque de colaboración y comunicación que fomenta la integración continua y la entrega continua de software. Se basa en la idea de que las áreas de desarrollo y operaciones deben trabajar juntas para lograr la entrega rápida y constante de software de alta calidad.
+
+  <p align="center">
+    <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/devops-concepts.webp?raw=true" width= "65%" alt="devops-concepts">
+  </p>
+
+
+  El objetivo de DevOps es mejorar la eficiencia y la efectividad de los procesos de desarrollo y entrega de software, reduciendo los tiempos de inactividad y los errores durante el proceso de implementación. Esto se logra a través de la automatización de tareas y procesos, la mejora continua de la calidad del software y la colaboración cercana entre desarrolladores y operadores.
+
+  - Existe un workflow (flujo de trabajo) para hacer que el código trabajado de forma local llegue al servidor y exponer el servicio a miles de usuarios.
+
+  - Las aplicaciones son expuestas a muchas zonas, potencialmente a todo el mundo.
+
+  - El request del cliente tiene que estar lo más cerca posible al data center para reducir la latencia, y por ende, el tiempo de respuesta.
+
+  - Git es un sistema atómico de control de versiones utilizado para crear repositorios de código. Github es un servicio de repositorios remotos.
+
+  - Centralizamos nuestro código en un repositorio remoto (Github), al que los miembros del equipo de desarrollo equipo aportarán el código. La rama principal (main) tiene todo el código que debe cumplir estándares a través de pruebas, calidad y seguridad.
+  Se denomina automation al rol de los desarrolladores que se encargan de realizar las automatizaciones para hacer las verificaciones en el código.
+
+  - El servidor de repositorios nos ayuda a reunir desarrollo y operaciones; el repositorio remoto se conecta con la nube, ambos se comunican, y si cumplen con las pruebas, calidad y seguridad, se despliega la app y nos conectamos a esos servidores.
+
+  - Así el equipo de desarrollo puede lanzar rápidamente y operar el código en producción, normalmente después se vuelve un flujo:
+    - Plan (planificación).
+    - Code (código).
+    - Build (construcción)
+    - Test (pruebas).
+    - Release (lanzamiento).
+    - Deploy (despliegue).
+    - Operate (operar).
+    - Monitor (monitorear).
+
+  - Este flujo es la cultura de trabajo conocida como DevOps.
+
+  <p align="center">
+    <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/devops-stack.webp?raw=true" width= "65%" alt="devops-stack">
+  </p>
 
 <br>
 <br>
 
   ## [THE SERVER]()
+Dentro del servidor podemos implementar diferentes arquitecturas, las más conocidas son: SaaS, PasS e IaaS.
 
-  <br>
-  <br>
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/devops-arch.png?raw=true" width= "65%" alt="devops-arch">
+</p>
 
-  ## [COOKIES AND SESSIONS]()
+SaaS: Netflix. PaaS: Windows Azure. IaaS: Amazon Web Services.
 
-  <br>
-  <br>
+- El servidor normalmente podemos implementar diferentes tipos de arquitecturas, existen tres tipos de arquitecturas principales.
+
+- **Software as a Service** (software como servicio, SaaS):
+  - No tienes control del estado de red, ni almacenamiento, ni los datos, ni sobre la aplicación en sí, pero puedes hacer uso de su servicio.
+
+- **Platform as a Service** (plataforma como servicio, PaaS):
+  - Tienes mayor capacidad de administración, comienzas a gestionar la aplicación y la data. Es la mas común a encontrar como backend developer. Te  permite distribuir tu aplicación, el código y controlar la data de la misma (bases de datos).
+
+- **Infrastructure as a Service** (infraestructura como servicio IaaS):
+  - Nos permite una todavía mayor capacidad de manejo. Tenemos que gestionar la aplicación, los datos, pero tambipen el runtine, el sistema operativo, etcétera. El proveedor sigue manejando la virtualización y servidores.
+
+- **On-site**:
+  - Te encargas absolutamente de todo, no dependes de un proveedor, sino que utilizas directamente el computador físico.
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/arch-details.png?raw=true" width= "65%" alt="arch-details">
+</p>
+
+<br>
+<br>
+
+  ## [COOKIES AND SESSIONS]()
+
+
+<br>
+<br>
 
   ## [DATABASES]()
 
@@ -348,12 +414,12 @@ Como parte de esa "nube", según la que escojas, puedes tener tu sistema replica
 <br>
 
 # BACKEND SCALABILITY
-  ## [WHAT IS SCALABILITY?]()
+  ## [WHAT IS SCALABILITY?]()
 
   <br>
   <br>
 
-  ## [WHAT IS REPLICATION?]()
+  ## [WHAT IS REPLICATION?]()
 
   <br>
   <br>
