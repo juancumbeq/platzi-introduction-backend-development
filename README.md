@@ -530,12 +530,73 @@ Si tenemos la base de datos local en cada servidor los datos no se van a sincron
   <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/database-server.png?raw=true" width= "65%" alt="database-server">
 </p>
 
-La solución radica en gestionar la base de datos fuera de estos servidores. Quizas como un servidor aparte que sirva como DB. Otra alternativa es la replicación.
+La solución radica en gestionar la base de datos fuera de estos servidores. Quizás como un servidor aparte que sirva como DB. Otra alternativa es la replicación.
 
 <br>
 <br>
 
   ## [WHAT IS REPLICATION?]()
+En el escenario de partida tenemos varios servidores configurados en base a la escalabilidad horizontal, en cada uno de esos servidores tenemos la base de datos, lo cuál supone un problema ya que la data no se sincroniza entre si.
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/initial-state.png?raw=true" width= "65%" alt="initial-state">
+</p>
+
+Una de las soluciones puede ser aislar la base de datos en un único servidor. Sin embargo, esto nos puede suponer "cuellos de botella". Una solución puede ser realizar escalamiento vertical sólo al servidor que tiene la base de datos.
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/one-server-database.png?raw=true" width= "65%" alt="one-server-database">
+</p>
+
+Si nuestro sistema es lo bastante grande podemos hacer escalamiento horizontal de las bases de datos. Ya que si continuamos con la solución en el caso de que se caiga el servidor que contiene la base de datos, todo el sistema cae.
+
+El escalamiento horizontal de las bases de datos consiste en instalar servidores dónde únicamente tenemos las bases de datos junto con un cluster que se encarge de gestionar las peticiones.
+
+Sin embargo, todas las bases de datos siguen estando aisladas, lo que da pie a que cada una tenga datos diferentes.
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/es-horizontal-databases.png?raw=true" width= "65%" alt="es-horizontal-databases">
+</p>
+
+Para solucionar el aislamiento de las bases de datos, cada vez que se realiza un escritura en una de las instancias de la base de datos se va llevar a cabo un proceso de sincronización conocido como replicación.
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/replica-write.png.png?raw=true" width= "65%" alt="replica-write.png">
+</p>
+
+De esta manera, independientemente a qué base de datos se realize las operaciones de lectura, la data va a estar disponible.
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/replica-read.png.png?raw=true" width= "65%" alt="replica-read.png">
+</p>
+
+Una vez hemos aplicado la replicación en nuestro sistema, pasaríamos a tener una arquitectura como la siguiente:
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/provider-offer.png?raw=true" width= "65%" alt="provider-offer">
+</p>
+
+Normalmente los proveedores de servicio de servidores ya nos proporcionan todo el sistema configurado, dando un sistema similar a:
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/es-horizontal-database-replication.png?raw=true" width= "65%" alt="es-horizontal-database-replication">
+</p>
+
+
+
+
+
+
+La replicación es un proceso mediante el cual los datos se copian y mantienen actualizados en múltiples bases de datos o servidores. Este mecanismo es esencial para mejorar la disponibilidad, la redundancia y el rendimiento del sistema. La replicación puede ser síncrona, donde las copias de datos se actualizan simultáneamente, o asíncrona, donde los cambios se propagan en intervalos regulares. En entornos de alta disponibilidad, la replicación permite que una réplica asuma el control en caso de fallo del servidor principal, garantizando la continuidad del servicio. También se utiliza para distribuir la carga de lectura entre varios nodos, mejorando así el rendimiento de las consultas. La replicación es fundamental en sistemas de bases de datos distribuidas, en la computación en la nube y en aplicaciones empresariales críticas, ya que asegura que los datos estén siempre disponibles y protegidos contra pérdidas.
+
+
+
+
+Soluciones a desincronización de base de datos.
+Aislar base de datos a un servidor en particular. Se le hace escalamiento vertical solo a la base de datos para evitar un cuello de botella.
+Se puede hacer escalamiento horizontal a la base de datos con su propio load balancer para solventar el problema de la disponibilidad.
+Cada vez que se realice escritura en una de las bases de datos, se realiza una sincronización para que el cambio ocurra en todas las bases de datos. Esto es conocido como replicación.
+Normalmente el backend developer no se encarga de la parte de replicación y gestión de bases de datos, sino en la capa de los servidores y el escalamiento horizontal.
+
 
 <br>
 <br>
