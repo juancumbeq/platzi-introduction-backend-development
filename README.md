@@ -577,31 +577,37 @@ Una vez hemos aplicado la replicación en nuestro sistema, pasaríamos a tener u
 </p>
 
 Normalmente los proveedores de servicio de servidores ya nos proporcionan todo el sistema configurado, dando un sistema similar a:
+
 <p align="center">
   <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/es-horizontal-database-replication.png?raw=true" width= "65%" alt="es-horizontal-database-replication">
 </p>
-
-
-
-
-
-
-La replicación es un proceso mediante el cual los datos se copian y mantienen actualizados en múltiples bases de datos o servidores. Este mecanismo es esencial para mejorar la disponibilidad, la redundancia y el rendimiento del sistema. La replicación puede ser síncrona, donde las copias de datos se actualizan simultáneamente, o asíncrona, donde los cambios se propagan en intervalos regulares. En entornos de alta disponibilidad, la replicación permite que una réplica asuma el control en caso de fallo del servidor principal, garantizando la continuidad del servicio. También se utiliza para distribuir la carga de lectura entre varios nodos, mejorando así el rendimiento de las consultas. La replicación es fundamental en sistemas de bases de datos distribuidas, en la computación en la nube y en aplicaciones empresariales críticas, ya que asegura que los datos estén siempre disponibles y protegidos contra pérdidas.
-
-
-
-
-Soluciones a desincronización de base de datos.
-Aislar base de datos a un servidor en particular. Se le hace escalamiento vertical solo a la base de datos para evitar un cuello de botella.
-Se puede hacer escalamiento horizontal a la base de datos con su propio load balancer para solventar el problema de la disponibilidad.
-Cada vez que se realice escritura en una de las bases de datos, se realiza una sincronización para que el cambio ocurra en todas las bases de datos. Esto es conocido como replicación.
-Normalmente el backend developer no se encarga de la parte de replicación y gestión de bases de datos, sino en la capa de los servidores y el escalamiento horizontal.
-
 
 <br>
 <br>
 
   ## [WHAT IS THE CACHE?]()
+La memoria cache es un sistema de almacenamiento interno del servidor para guardarde manera temporal el retorno de información.
+
+Se suele utilizar con información frecuentemente solicitada para mejorar el redimiento mediante el acceso rápido de los datos.
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/cache.png?raw=true" width= "65%" alt="cache">
+</p>
+
+El sistema de memoria de cache puede estar dentro del mismo servidor guardando las peticiones que vayan llegando.
+
+Es importante reconocer dónde es óptimo utilizar un sistema de cache, en donde sepamos que los sitios se encuentren constantemente solicitando información y el cliente envíe de manera constante la misma información.
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/where-to-apply.png?raw=true" width= "65%" alt="where-to-apply">
+</p>
+
+No es muy bueno su uso para aplicaciones en tiempo real, como sistemas de chat.
+
+Puede ser de utilidad para el bloqueo de ataques de denegación de servicio (DDoS). Esto es debido a que en una situación en la que recibas muchas peticiones al mismo endpoint en un espacio corto de tiempo tu sistema no se vería tan afectado, puesto que el sistema de caché empieza a responder en lugar del backend y la bases de datos, y podría absorber dicho ataque.
+
+
+
 
 <br>
 <br>
