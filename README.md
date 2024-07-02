@@ -606,13 +606,48 @@ No es muy bueno su uso para aplicaciones en tiempo real, como sistemas de chat.
 
 Puede ser de utilidad para el bloqueo de ataques de denegación de servicio (DDoS). Esto es debido a que en una situación en la que recibas muchas peticiones al mismo endpoint en un espacio corto de tiempo tu sistema no se vería tan afectado, puesto que el sistema de caché empieza a responder en lugar del backend y la bases de datos, y podría absorber dicho ataque.
 
-
-
+Hay empresas que gestionan este tipo de ataques con base en la caché:
+  - [link](https://www.cloudflare.com/es-es/learning/ddos/memcached-ddos-attack/)
+  - [link](https://developers.cloudflare.com/cache/)
 
 <br>
 <br>
 
   ## [TASK QUEUE]()
+Un sistema de colas de tarea en backend es una estructura de datos que almacena tareas pendientes para ser procesadas. Estas tareas pueden ser cualquier cosa, desde procesamiento de datos hasta envío de correos electrónicos o actualizaciones de bases de datos. 
+
+Por lo general este tipo de tareas son complejas y toman tiempo, lo que supone que la experiencia de usuario empeore y que los recursos del sistema comienzen a colapsar otras tareas que podrían estar ejecutándose.
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/tasks.png?raw=true" width= "65%" alt="tasks">
+</p>
+
+Para entender como funciona una cola de tareas hay que tener en cuenta dos conceptos, la ejecución y la respuesta. Un request normal se **ejecuta** lo más pronto posible y **responde** por el mismo medio. Sin embargo, una cola de tareas eventualmente **ejecutará** un proceso y puede **responder** por otros medios.
+
+Un ejemplo de cola de tareas es Facebook. Facebook cuenta con la opción de descargar toda nuestra información de la plataforma. La respuesta más inmediata es un simple aviso de que esa tarea llevará un tiempo y que el usuario será informado de la disponibilidad de la información solicitada. Esa información será entregada en otro formato al que se realizó la solicitud. 
+
+El sistema de cola de tareas procesa las tareas en orden de llegada, lo que permite que el backend maneje varias tareas simultáneamente y mejora la escalabilidad y el rendimiento, de decir, a medida que entran las solcicitudes, están se irán apilando en lo que se conoce como filas.
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/fila.png?raw=true" width= "65%" alt="fila">
+</p>
+
+Dentro de la configuración de nuestro sistema lo más usual es configurar un servidor que se encargue de gestionar este tipo de tareas, dándo como resultado una representación como la siguiente:
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/system.png?raw=true" width= "65%" alt="system">
+</p>
+
+  ### Ventajas de las colas de tareas
+  - **Manejo de alta concurrencia**: Un sistema de colas permite manejar una gran cantidad de peticiones simultáneas al procesar varias tareas a la vez, lo que mejora el rendimiento y la escalabilidad del sistema.
+
+  - **Procesamiento asíncrono**: Un sistema de colas permite que las tareas se procesen de manera asíncrona, lo que significa que el cliente puede recibir una respuesta inmediata mientras que la tarea se procesa en segundo plano.
+
+  - **Tolerancia a fallas**: Un sistema de colas permite retener las tareas en caso de fallas en el sistema, lo que garantiza que las tareas se procesen una vez que el sistema vuelve a estar disponible.
+
+  - **Priorización de tareas**: Un sistema de colas permite priorizar las tareas de acuerdo a la importancia o urgencia, lo que garantiza que las tareas críticas se procesen primero.
+
+  - **Desacoplamiento de procesos**: Un sistema de colas permite desacoplar diferentes procesos en el sistema, lo que permite escalar cada proceso de manera independiente y mejora la flexibilidad del sistema.
 
 <br>
 <br>
