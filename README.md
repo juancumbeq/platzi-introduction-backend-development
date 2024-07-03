@@ -6,7 +6,7 @@
 
 <br>
 
-## What did I learn through this course:
+## Qué aprendí en este curso?:
 
 
 <br>
@@ -37,16 +37,7 @@
   ## WHAT IS THE CACHE?
   ## TASK QUEUE
   ## SERVER-SIDE RENDERING
-# NEXT STEPS
-  ## WHAT TO LEARN NOW?
 # AUTHOR
-
-
-
-
-## Demo
-
-[Click this link to check the finished website]()
 
 <br>
 <br>
@@ -54,25 +45,22 @@
 
 # WEB DEVELOPMENT ROLES
   ## [BACKEND DEVELOPMENT ROLES]()
-Your primary role as a Backend Developer involves writing code related to:
+Tu rol principal como Desarrollador Backend implica escribir código relacionado con:
+  - Reglas de negocio
+  - Validación
+  - Autorización de usuarios
+  - Conexiones a bases de datos
+  - Código que se ejecuta en el lado del servidor
+  - Un Desarrollador Backend también puede estar involucrado en otros roles como:
 
-  * Business rules
-  * Validation
-  * User authorization
-  * Database connections
-  * Code that runs on the server side
-  * A Backend Developer may also be involved in other roles such as:
+  ### Administrador de bases de datos
+  - Gestiona una base de datos, sus políticas y cómo accederemos a esa base de datos a través del código, así como las medidas de seguridad que deben implementarse.
 
-**DB ADMIN**
+  ### Administrador de servidores
+  - Responsable de gestionar la seguridad de los servidores donde se despliega el código.
 
-  * Manages a database, its policies, and how we will access that database through the code, as well as the security measures that should be in place.
-
-**SERVER ADMIN**
-
-  * Responsible for managing the security of the servers where the code is deployed.
-
-  <br>
-  <br>
+<br>
+<br>
 
   ## [FRONTEND, BACKEND AND FULL STACK]()
 En este apartado hacemos una diferenciación entre las areas de backend y frontend. Ya que cómo desarrolladores backend vamos a desarrollar servicios, los cuales los clientes se conectarán, entre los distintos clientes encontramos:
@@ -111,15 +99,15 @@ Tenemos un amplio abanico de lenguajes, los cuáles normalmente van acompañados
   ### APIS
 La manera en la que se conectan la parte del cliente con el backend es mediante las APIS.
  
-
   ### Fullstack
 Este rol en la combinación entre un frontend y un backend developer.
+
 <br>
 <br>
 <br>
 
 # BACKEND FOUNDATIONS
-  ## [HOW THE BACKEND IS BUILD?]()
+  ## [HOW THE BACKEND IS BUILD?]()
   * Los usuarios se conectan través del cliente de un dispositivo (ya sea un navegador, dispositivo móvil, etc…).
   * Se realiza una solicitud en el frontend a través del cliente.
   * En el listado de solicitudes, cada posible solicitud es conocida como un endpoint.
@@ -132,56 +120,36 @@ Este rol en la combinación entre un frontend y un backend developer.
 <br>
 <br>
 
-  ## [HOW TO CHOSE THE LANGUAGES AND FRAMEWORKS FOR THE BACKEND?]()
+  ## [HOW TO CHOSE THE LANGUAGES AND FRAMEWORKS FOR THE BACKEND?]()
 Lo principal es escoger un lenguaje en el cual especializarte, acorde a sus características y tus preferencias, luego de aprender el lenguaje, puedes profundizar aun mas en uno o varios de sus framework.
 
 Cada framework (en su mayoría) se utiliza para montar servidores web, los cuales disponen de varios funcionalidades, las cuales se ejecutan sobre el protocolo HTTP.
 
+Frameworks son herramientas que nos ayuda a ir más ágil y desarrollar nuestro proyecto en el dia a dia.
+- Python
+  - Django: es un framework de Python que se enfoca en el desarrollo rápido y en la seguridad. Es muy completo y viene con un montón de herramientas y características que facilitan la creación de aplicaciones de backend.
+  - Flask: es otro framework de Python que es muy ligero y flexible. Es ideal para proyectos más pequeños y para aquellos que desean tener un mayor control sobre su código.
+  - FastAPI
 
+- JavaScript
+  - Express: es un framework de JavaScript basado en Node.js que es muy popular para el desarrollo de aplicaciones web y de API.
+  - NextJS
 
-Frameworks son herramientas que nos ayuda a ir más ágil y desarrollar nuestro proyecto en el dia a dia. entre ellos tenemos para Python:
+- PHP
+  - Laravel
+  - Symphony
 
-Django
+- Java
+  - Spring: es un framework de Java que se enfoca en la creación de aplicaciones empresariales escalables y seguras.
 
-Flask
+- Go
+  - Gin
 
-FastAPI
+- Rubi
+  - Ruby Rails: es un framework de Ruby que ha sido muy popular en la comunidad de desarrollo web. Es conocido por su enfoque en la productividad y en la facilidad de uso.
 
-En JavaScript
-
-Express
-
-NextJS
-
-En PHP
-
-Laravel
-
-Symphony
-
-En Java
-
-Spring
-En Go
-
-Gin
-En Rubi
-
-Ruby Rails
-En C#
-
-.NET
-
-
-Django: es un framework de Python que se enfoca en el desarrollo rápido y en la seguridad. Es muy completo y viene con un montón de herramientas y características que facilitan la creación de aplicaciones de backend.
-
-Flask: es otro framework de Python que es muy ligero y flexible. Es ideal para proyectos más pequeños y para aquellos que desean tener un mayor control sobre su código.
-
-Ruby on Rails: es un framework de Ruby que ha sido muy popular en la comunidad de desarrollo web. Es conocido por su enfoque en la productividad y en la facilidad de uso.
-
-Express.js: es un framework de JavaScript basado en Node.js que es muy popular para el desarrollo de aplicaciones web y de API.
-
-Spring: es un framework de Java que se enfoca en la creación de aplicaciones empresariales escalables y seguras.
+- C#
+  - .NET
 
 Estos son solo algunos ejemplos de frameworks para backend, hay muchos más disponibles dependiendo de la plataforma y del lenguaje de programación que elijas. Es importante evaluar cuál es el mejor para tu proyecto en particular, teniendo en cuenta tus necesidades y preferencias personales.
 
@@ -196,58 +164,57 @@ Estos son solo algunos ejemplos de frameworks para backend, hay muchos más disp
   ### URL structure
 Cuando queremos acceder a un recurso de internet lo hacemos a través de una URL. La URL se compone de diversas partes, como son: protocolo, dominio y end-point.
 
-Protocolo: tenemos http y https, la "s" indica que toda la comunicación hacia el dominio indicado está cifrada, por lo que representa un protocolo más seguro.
+  - **Protocolo**: tenemos http y https, la "s" indica que toda la comunicación hacia el dominio indicado está cifrada, por lo que representa un protocolo más seguro.
 
-Dominio: hace referencia a la página web a la que solicitamos el recurso, mediante el protoco DNS ese dominio se traduce a una dirección IP que hará referencia a un servidor específico, en el que se encuentra alojada la web a la que queremos acceder, así como todos los recursos extra.
+  - **Dominio**: hace referencia a la página web a la que solicitamos el recurso, mediante el protoco DNS ese dominio se traduce a una dirección IP que hará referencia a un servidor específico, en el que se encuentra alojada la web a la que queremos acceder, así como todos los recursos extra.
 
-End-point: mediante esta elemento podemos acceder a un recurso o servicio en concreto. El servidor se encargará de procesar la petición en referencia a un end-point en particular, recogiendo todos los recursos requeridos y retornándolos al cliente.
+  - **End-point**: mediante esta elemento podemos acceder a un recurso o servicio en concreto. El servidor se encargará de procesar la petición en referencia a un end-point en particular, recogiendo todos los recursos requeridos y retornándolos al cliente.
 
 <p align="center">
-  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/url.png?raw=true" width= "100%" alt="Url structure">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/url.png?raw=true" width= "75%" alt="Url structure">
 </p>
 
   ### Request-Response structure
 
 <p align="center">
-  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/request-response-structure.png?raw=true" width= "100%" alt="request-response-structure">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/request-response-structure.png?raw=true" width= "75%" alt="request-response-structure">
 </p>
 
 Las respuestas por parte del servidor pueden venir en varios formatos. Cómo podemos ver pueden ser archivos para renderizado (HTML, CSS y JS) o archivos de datos (XML, JSON)
 
-  ### Http codes
-El rango de 1xx indica información hacia los clientes.
+  ### Http Codes
+El rango de **1xx** indica información hacia los clientes.
 <p align="center">
   <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/1xx-codes.png?raw=true" width= "65%" alt="1xx-codes">
 </p>
 
-El rango de 2xx es el rango más usado, e indica éxito en la petición.
+El rango de **2xx** es el rango más usado, e indica éxito en la petición.
 <p align="center">
   <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/2xx-codes.png?raw=true" width= "65%" alt="2xx-codes">
 </p>
 
-El rango de 3xx es el rango usado para indicar a los clientes que se han movido recursos. De esta manera podemo redireccionar al usuario a otra página web.
+El rango de **3xx** es el rango usado para indicar a los clientes que se han movido recursos. De esta manera podemo redireccionar al usuario a otra página web.
 <p align="center">
   <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/3xx-codes.png?raw=true" width= "65%" alt="3xx-codes">
 </p>
 
-El rango de 4xx indica errores por parte del cliente. El error más común es el 404, donde el cliente solicita una página web que no existe.
+El rango de **4xx** indica errores por parte del cliente. El error más común es el 404, donde el cliente solicita una página web que no existe.
 <p align="center">
   <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/4xx-codes.png?raw=true" width= "65%" alt="4xx-codes">
 </p>
 
-El rango de 5xx indica errores por parte del sevidor. Por ejemplo, el error 504 indica que se consumido el tiempo para retornar el recurso solicitado al cliente.
+El rango de **5xx** indica errores por parte del sevidor. Por ejemplo, el error 504 indica que se consumido el tiempo para retornar el recurso solicitado al cliente.
 <p align="center">
   <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/5xx-codes.png?raw=true" width= "65%" alt="5xx-codes">
 </p>
 
 Resumen de los http codes:
 <p align="center">
-  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/status-code.png?raw=true" width= "65%" alt="status-code">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/status-code.png?raw=true" width= "85%" alt="status-code">
 </p>
 <p align="center">
-  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/http-status-code.png?raw=true" width= "65%" alt="http-status-code">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/http-status-code.jpg?raw=true" width= "85%" alt="http-status-code">
 </p>
-
 
 <br>
 <br>
@@ -258,21 +225,21 @@ Resumen de los http codes:
 Las APIs son interfaces que nos permiten, a través de código, la comunicación entre sistemas. Como backend developers, nos interesan las APIs que son servicio web y corren en el protocolo HTTP. La API utiliza una lista de rutas conocidas como endpoints, que provee las respuestas a las solicitudes del cliente. La solicitud debe ser empaquetada y retornada, y existen distintos tipos de empaquetado: JSON. XML.
 
 <p align="center">
-  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/how-api-work.png?raw=true" width= "65%" alt="how-api-work">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/how-api-work.jpg?raw=true" width= "75%" alt="how-api-work">
 </p>
 
 Un vistazo a lo que es un Rest API:
 <p align="center">
-  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/api-def.png?raw=true" width= "65%" alt="api-def">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/api-def.webp?raw=true" width= "85%" alt="api-def">
 </p>
 
 <br>
 <br>
 
-  ## [REST API STRUCTURE]()
+  ## [REST API STRUCTURE]()
 REST (Representational State Transfer) API es un estilo de arquitectura de software que se utiliza para construir servicios web. Una API REST es una interface que se utiliza para interconectar sistemas o aplicaciones, y permite que estos sistemas o aplicaciones envíen y reciban datos entre sí a través de la red.
 
-Una API REST se basa en el protocolo HTTP, y utiliza operaciones HTTP como GET, POST, PUT y DELETE para realizar diversas acciones sobre los datos almacenados en un servidor. Estas operaciones son conocidas como métodos HTTP, y corresponden a las acciones CRUD (Create, Read, Update, Delete) que se pueden realizar sobre los datos.
+Una API REST se basa en el protocolo HTTP, y utiliza operaciones HTTP como **GET**, **POST**, **PUT** y **DELETE** para realizar diversas acciones sobre los datos almacenados en un servidor. Estas operaciones son conocidas como métodos HTTP, y corresponden a las acciones CRUD (Create, Read, Update, Delete) que se pueden realizar sobre los datos.
 
 Por ejemplo, si tienes una aplicación web que almacena información de contactos, podrías utilizar una API REST para permitir que otras aplicaciones accedan y utilicen los datos de tus contactos. La aplicación podría exponer una API REST que permita a otras aplicaciones realizar operaciones como crear un nuevo contacto, obtener la lista de todos los contactos, modificar la información de un contacto existente o eliminar un contacto.
 
@@ -282,10 +249,10 @@ A través de los endpoints se le pide información al dominio, por lo general, s
 
   ### CRUD
 CRUD es el índice de unas plabras clave, y en el protocolo HTTP tenemos métodos para llevarlas a cabo:
-  * Create (crear) → POST.
-  * Read (leer) → GET.
-  * Update (actualizar) → PUT / PATCH. Put envía la totalidad de los datos, mientras que patch envía solo los datos destinados a actualizarse.
-  * Delete (eliminar) → DELETE.
+  * **Create** (crear) → POST.
+  * **Read** (leer) → GET.
+  * **Update** (actualizar) → PUT / PATCH. Put envía la totalidad de los datos, mientras que patch envía solo los datos destinados a actualizarse.
+  * **Delete** (eliminar) → DELETE.
 
 
   ### Ejemplo de CRUD 
@@ -333,7 +300,7 @@ CRUD es el índice de unas plabras clave, y en el protocolo HTTP tenemos método
   DevOps es un enfoque de colaboración y comunicación que fomenta la integración continua y la entrega continua de software. Se basa en la idea de que las áreas de desarrollo y operaciones deben trabajar juntas para lograr la entrega rápida y constante de software de alta calidad.
 
   <p align="center">
-    <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/devops-concepts.webp?raw=true" width= "65%" alt="devops-concepts">
+    <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/devops-concepts.jpg?raw=true" width= "85%" alt="devops-concepts">
   </p>
 
 
@@ -365,7 +332,7 @@ CRUD es el índice de unas plabras clave, y en el protocolo HTTP tenemos método
   - Este flujo es la cultura de trabajo conocida como DevOps.
 
   <p align="center">
-    <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/devops-stack.webp?raw=true" width= "65%" alt="devops-stack">
+    <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/devops-stack.webp?raw=true" width= "85%" alt="devops-stack">
   </p>
 
 <br>
@@ -561,13 +528,13 @@ Sin embargo, todas las bases de datos siguen estando aisladas, lo que da pie a q
 Para solucionar el aislamiento de las bases de datos, cada vez que se realiza un escritura en una de las instancias de la base de datos se va llevar a cabo un proceso de sincronización conocido como replicación.
 
 <p align="center">
-  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/replica-write.png.png?raw=true" width= "65%" alt="replica-write.png">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/replica-write.png?raw=true" width= "65%" alt="replica-write">
 </p>
 
 De esta manera, independientemente a qué base de datos se realize las operaciones de lectura, la data va a estar disponible.
 
 <p align="center">
-  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/replica-read.png.png?raw=true" width= "65%" alt="replica-read.png">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/replica-read.png?raw=true" width= "65%" alt="replica-read">
 </p>
 
 Una vez hemos aplicado la replicación en nuestro sistema, pasaríamos a tener una arquitectura como la siguiente:
@@ -579,7 +546,7 @@ Una vez hemos aplicado la replicación en nuestro sistema, pasaríamos a tener u
 Normalmente los proveedores de servicio de servidores ya nos proporcionan todo el sistema configurado, dando un sistema similar a:
 
 <p align="center">
-  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/es-horizontal-database-replication.png?raw=true" width= "65%" alt="es-horizontal-database-replication">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/es-horizontal-databases-replication.png?raw=true" width= "65%" alt="es-horizontal-database-replication">
 </p>
 
 <br>
@@ -619,7 +586,7 @@ Un sistema de colas de tarea en backend es una estructura de datos que almacena 
 Por lo general este tipo de tareas son complejas y toman tiempo, lo que supone que la experiencia de usuario empeore y que los recursos del sistema comienzen a colapsar otras tareas que podrían estar ejecutándose.
 
 <p align="center">
-  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/tasks.png?raw=true" width= "65%" alt="tasks">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/tasks.png?raw=true" width= "45%" alt="tasks">
 </p>
 
 Para entender como funciona una cola de tareas hay que tener en cuenta dos conceptos, la ejecución y la respuesta. Un request normal se **ejecuta** lo más pronto posible y **responde** por el mismo medio. Sin embargo, una cola de tareas eventualmente **ejecutará** un proceso y puede **responder** por otros medios.
@@ -663,26 +630,26 @@ En el servidor tenemos funcionando nuestros servicios de back-end, los cuáles r
 El renderizado de lado del servidor es un enfoque en el que se procesa y genera completamente el HTML en el servidor, antes de enviarlo al navegador del cliente. Tiene la ventaja de que es un proceso muy rápido pero sacrifica la interactividad de la página ya que requiere de una recarga completa de la web.
 
 <p align="center">
-  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/ssr.png?raw=true" width= "65%" alt="ssr">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/ssr.png?raw=true" width= "75%" alt="ssr">
 </p>
 
   ### CSR
 La otra alternativa disponible es realizar el renderizado directamente en el navegador del cliente. La ventaja de esta otra opción es la interactividad, mejorando la experiencia de usuario, sin embargo, es un proceso más lento ya que el consumo de los datos se realiza en formato JSON no en HTML
 
 <p align="center">
-  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/csr.png?raw=true" width= "65%" alt="csr">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/csr.png?raw=true" width= "75%" alt="csr">
 </p>
 
 Actualmente disponemos de frameworks para frontend que son los encargados de consumir las APIS, recibiendo los datos en formato JSON y realizando el renderizado a través del navegador del cliente.
 
 <p align="center">
-  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/frontend-fr.png?raw=true" width= "65%" alt="frontend-fr">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/frontend-fr.png?raw=true" width= "75%" alt="frontend-fr">
 </p>
 
 Es importante mencionar que la última generación de frameworks, como los de la imagen inferior, hacen renderizado desde lado de servidor y luego cuándo llegan al frontend se comportan de una manera altamente interactiva.
 
 <p align="center">
-  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/ssr-fr.png?raw=true" width= "65%" alt="ssr-fr">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/ssr-fr.png?raw=true" width= "75%" alt="ssr-fr">
 </p>
 
   ### Server-Side Rendering VS Client-Side Rendering?
@@ -727,6 +694,4 @@ El Prerendering es una técnica de renderizado web que implica generar y renderi
 <br>
 
 # AUTHOR
-
-
 Este proyecto fue desarrollado por *Juan Cumbe*. Si tienes alguna pregunta o sugerencia sobre el proyecto te invito a contactarme via[e-mail](mailto:hello@juancumbe.com) o a través de mi perfil de[Linkedin](https://www.linkedin.com/in/juancumbeq/). 
