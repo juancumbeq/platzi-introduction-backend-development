@@ -679,12 +679,22 @@ Actualmente disponemos de frameworks para frontend que son los encargados de con
   <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/frontend-fr.png?raw=true" width= "65%" alt="frontend-fr">
 </p>
 
+Es importante mencionar que la última generación de frameworks, como los de la imagen inferior, hacen renderizado desde lado de servidor y luego cuándo llegan al frontend se comportan de una manera altamente interactiva.
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/ssr-fr.png?raw=true" width= "65%" alt="ssr-fr">
+</p>
 
   ### Server-Side Rendering VS Client-Side Rendering?
   - El SSR, el HTML lo genera el servidor
 
   - El CSR, la aplicación y el HTML se generan en el navegador del cliente utilizando JavaScript y el DOM.
 
+  ### Arquitectura del sistema
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/arch-system.png?raw=true" width= "65%" alt="arch-system">
+</p>
 
   ### Rehydration
 Es una técnica que combina características de SSR y CSR. En el Rehydration, se aprovecha el HTML y los datos renderizados desde el servidor, y luego se "hidrata" o complementa con una aplicación JavaScript que se ejecuta en el navegador.
