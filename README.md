@@ -691,6 +691,7 @@ Es importante mencionar que la última generación de frameworks, como los de la
   - El CSR, la aplicación y el HTML se generan en el navegador del cliente utilizando JavaScript y el DOM.
 
   ### Arquitectura del sistema
+La aquitectura de nuestro sistema podría dar como resultado algo similar a:
 
 <p align="center">
   <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/arch-system.png?raw=true" width= "65%" alt="arch-system">
@@ -721,18 +722,11 @@ El Prerendering es una técnica de renderizado web que implica generar y renderi
   - Rendimiento en dispositivos de baja potencia
   - Mayor seguridad en la manipulación de datos y autenticación.
 
-
-<br>
-<br>
-<br>
-
-# NEXT STEPS
-  ## [WHAT TO LEARN NOW?]()
-
 <br>
 <br>
 <br>
 
 # AUTHOR
 
-This project was developed by *Juan Cumbe*. If you have any questions or suggestions about the project, feel free to contact me via [e-mail](mailto:hello@juancumbe.com) or my [Linkedin](https://www.linkedin.com/in/juancumbeq/) profile. 
+
+Este proyecto fue desarrollado por *Juan Cumbe*. Si tienes alguna pregunta o sugerencia sobre el proyecto te invito a contactarme via[e-mail](mailto:hello@juancumbe.com) o a través de mi perfil de[Linkedin](https://www.linkedin.com/in/juancumbeq/). 
