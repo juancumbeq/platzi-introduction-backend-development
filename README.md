@@ -653,6 +653,64 @@ Dentro de la configuración de nuestro sistema lo más usual es configurar un se
 <br>
 
   ## [SERVER-SIDE RENDERING]()
+En el servidor tenemos funcionando nuestros servicios de back-end, los cuáles regularmente retornan datos hacia el cliente. Los formatos más usuales son los siguientes.
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/server-side.png?raw=true" width= "65%" alt="server-side">
+</p>
+
+  ### SSR
+El renderizado de lado del servidor es un enfoque en el que se procesa y genera completamente el HTML en el servidor, antes de enviarlo al navegador del cliente. Tiene la ventaja de que es un proceso muy rápido pero sacrifica la interactividad de la página ya que requiere de una recarga completa de la web.
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/ssr.png?raw=true" width= "65%" alt="ssr">
+</p>
+
+  ### CSR
+La otra alternativa disponible es realizar el renderizado directamente en el navegador del cliente. La ventaja de esta otra opción es la interactividad, mejorando la experiencia de usuario, sin embargo, es un proceso más lento ya que el consumo de los datos se realiza en formato JSON no en HTML
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/csr.png?raw=true" width= "65%" alt="csr">
+</p>
+
+Actualmente disponemos de frameworks para frontend que son los encargados de consumir las APIS, recibiendo los datos en formato JSON y realizando el renderizado a través del navegador del cliente.
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-introduction-backend-development/blob/main/readme_images/frontend-fr.png?raw=true" width= "65%" alt="frontend-fr">
+</p>
+
+
+  ### Server-Side Rendering VS Client-Side Rendering?
+  - El SSR, el HTML lo genera el servidor
+
+  - El CSR, la aplicación y el HTML se generan en el navegador del cliente utilizando JavaScript y el DOM.
+
+
+  ### Rehydration
+Es una técnica que combina características de SSR y CSR. En el Rehydration, se aprovecha el HTML y los datos renderizados desde el servidor, y luego se "hidrata" o complementa con una aplicación JavaScript que se ejecuta en el navegador.
+
+
+  ### Prerendering
+El Prerendering es una técnica de renderizado web que implica generar y renderizar una página web completa en el servidor antes de que un usuario realice una solicitud. Esto significa que las páginas web se crean de antemano, y los resultados se almacenan en forma de archivos HTML estáticos que se pueden entregar de inmediato cuando se solicitan.
+
+
+  ### Ventajas de utilizar Server-Side Rendering (SSR)?
+  - Mejora el SEO: Los motores de búsqueda pueden indexar mejor las páginas que están renderizadas en el servidor.
+
+  - Carga más rápida de la página: La página se renderiza en el servidor antes de enviarse al navegador, por lo que se puede mostrar al usuario mucho antes que si se hiciera en el lado del cliente.
+
+  - Mejora el rendimiento en dispositivos de baja potencia: Al hacer el render en el servidor, se evita cargar la página completa en el navegador antes de mostrarla, lo que es importante en dispositivos de baja potencia.
+
+  - Mayor compatibilidad: Al hacer el render en el servidor, se pueden garantizar que la página se muestre de manera consistente en todos los navegadores, incluso en aquellos que no soportan JavaScript.
+
+  - Mayor seguridad: Al hacer el render en el servidor, se pueden ocultar datos sensibles y se pueden realizar validaciones y autenticaciones antes de enviar la página al navegador.
+
+  ### Cuando aplicar Server-Side Rendering (SSR)?
+  - Una indexación SEO efectiva
+  - Una carga rápida de la página
+  - Rendimiento en dispositivos de baja potencia
+  - Mayor seguridad en la manipulación de datos y autenticación.
+
 
 <br>
 <br>
