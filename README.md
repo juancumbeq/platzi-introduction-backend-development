@@ -83,7 +83,7 @@ En este apartado hacemos una diferenciación entre las areas de backend y fronte
   - Flutter
   - .NET MAUI
 
-  ### Backend
+### Backend
 Tenemos un amplio abanico de lenguajes, los cuáles normalmente van acompañados de un framework que nos permite escribir código más ágil.
 
 - Python - Django
@@ -95,7 +95,7 @@ Tenemos un amplio abanico de lenguajes, los cuáles normalmente van acompañados
 - Go - Gin
 - C# - .NET
 
-  ### APIS
+ ### APIS
 La manera en la que se conectan la parte del cliente con el backend es mediante las APIS.
  
   ### Fullstack
