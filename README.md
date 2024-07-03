@@ -6,38 +6,37 @@
 
 <br>
 
-## Qué aprendí en este curso?:
-
-
-<br>
-
 # INDEX
 
+- [WEB DEVELOPMENT ROLES](#web-development-roles)
+  - [BACKEND DEVELOPMENT ROLES](#backend-development-roles)
+  - [FRONTEND, BACKEND AND FULL STACK](#frontend-backend-and-full-stack)
 
-# WEB DEVELOPMENT ROLES
-  ## BACKEND DEVELOPMENT ROLES
-  ## FRONTEND, BACKEND AND FULL STACK
-# BACKEND FOUNDATIONS
-  ## HOW THE BACKEND IS BUILD?
-  ## HOW TO CHOSE THE LANGUAGES AND FRAMEWORKS FOR THE BACKEND?
-  ## HTTP
-# REST APIS
-  ## WHAT ARE THE APIS?
-  ## REST API STRUCTURE
-  ## INSOMNIA AND POSTMAN
-# BACKEND ON A DAILY BASIS
-  ## THE CLOUD
-  ## DEVOPS
-  ## THE SERVER
-  ## COOKIES AND SESSIONS
-  ## DATABASES
-# BACKEND SCALABILITY
-  ## WHAT IS SCALABILITY?
-  ## WHAT IS REPLICATION?
-  ## WHAT IS THE CACHE?
-  ## TASK QUEUE
-  ## SERVER-SIDE RENDERING
-# AUTHOR
+- [BACKEND FOUNDATIONS](#backend-foundations-1)
+  - [HOW THE BACKEND IS BUILD?](#how-the-backend-is-build)
+  - [HOW TO CHOSE THE LANGUAGES AND FRAMEWORKS FOR THE BACKEND?](#how-to-chose-the-languages-and-frameworks-for-the-backend)
+  - [HTTP](#http)
+
+- [REST APIS](#rest-apis)
+  - [WHAT ARE THE APIS?](#what-are-the-apis)
+  - [REST API STRUCTURE](#rest-api-structure)
+  - [INSOMNIA AND POSTMAN](#insomnia-and-postman)
+
+- [BACKEND ON A DAILY BASIS](#backend-on-a-daily-basis-1)
+  - [THE CLOUD](#the-cloud-1)
+  - [DEVOPS](#devops-1)
+  - [THE SERVER](#the-server-1)
+  - [COOKIES AND SESSIONS](#cookies-and-sessions)
+  - [DATABASES](#databases-1)
+
+- [BACKEND SCALABILITY](#backend-scalability-1)
+  - [WHAT IS SCALABILITY?](#what-is-scalability)
+  - [WHAT IS REPLICATION?](#what-is-replication)
+  - [WHAT IS THE CACHE?](#what-is-the-cache-1)
+  - [TASK QUEUE](#task-queue-1)
+  - [SERVER-SIDE RENDERING](#server-side-rendering-1)
+
+- [AUTHOR](#author-1)
 
 <br>
 <br>
